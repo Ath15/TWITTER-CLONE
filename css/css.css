@@ -848,10 +848,11 @@ color:#00acee ;
 	top: 0;
 	bottom: 0;
 	left: 0;
-	opacity: 0;
-	visibility: hidden;
+	display: none;
+	
 } 
 .sidebar{
+	display: block;
 	position: fixed;
 	top: 0;
 	right: -300px;
@@ -989,6 +990,32 @@ color:#00acee ;
 .fa-chart-line{
 		color:#868383 ;
 
+}
+@media( max-widht :1300px){
+	.middle-content{
+		width: 60%;
+	}
+
+	.footer-page ul{
+		flex-wrap: wrap;
+	}
+.footer-page li{
+	margin-bottom: 10px;
+}
+
+}
+.post-icon i{
+	cursor: pointer;
+}
+.post-icon i::hover{
+	color: #ED2B33FF;
+
+}
+@media( max-widht :1100px){
+	.main-page{
+		grid-template-columns: 1fr;
+		grid-template-rows:repeat(2, 1fr) min-content ;
+	}
 }
 
 
